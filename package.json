@@ -1,0 +1,25 @@
+{
+  "name": "protractor-examples",
+  "version": "1.0.0",
+  "description": "Examples of protractor tests",
+  "main": "index.js",
+  "scripts": {
+    "wdm:update": "webdriver-manager update",
+    "wdm:start": "webdriver-manager start",
+    "angular:demo-app": "protractor conf.js --specs=./test/1-basic-angular/protractor-demo-app.spec.js",
+    "angular:multi-browser": "protractor ./test/1-basic-angular/conf.js",
+    "non-angular:ignoreSync": "protractor conf.js --specs=./test/2-non-angular/ignoreSynchronization.spec.js",
+    "non-angular:webDriver": "protractor conf.js --specs=./test/2-non-angular/webDriverDirect.spec.js",
+    "page-objects": "protractor conf.js --specs=./test/3-using-page-objects/protractor-demo-app.spec.js"
+  },
+  "keywords": [
+    "protractor",
+    "ui-testing",
+    "testing"
+  ],
+  "author": "thnolan@redhat.com",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.2.0"
+  }
+}
